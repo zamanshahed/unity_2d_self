@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 3209786389
+    locked: 0
+  - name: Ground
+    uniqueID: 1958865473
+    locked: 0
+  - name: midGround
+    uniqueID: 2901786509
+    locked: 0
+  - name: forGround
+    uniqueID: 3527213347
+    locked: 0
