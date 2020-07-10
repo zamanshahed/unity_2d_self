@@ -53,3 +53,6 @@ TagManager:
   - name: forGround
     uniqueID: 3527213347
     locked: 0
+  - name: Character
+    uniqueID: 2845704111
+    locked: 0
