@@ -11,7 +11,10 @@ public class Wheel : MonoBehaviour
     public Score score;
 
     public Animator wheelAnim;
+
     public GameObject coin;
+    public GameObject GetReady;
+
     public float speed;
 
     // Start is called before the first frame update
@@ -25,6 +28,8 @@ public class Wheel : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
+
             //Debug.Log("Tap Detected!");
             rb.gravityScale = 0.8f;
             Jump();
@@ -42,7 +47,7 @@ public class Wheel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            Debug.Log("Coin Scored !!");
+            //Debug.Log("Coin Scored !!");
             score.Scored();
             Destroy(collision.gameObject);
         }

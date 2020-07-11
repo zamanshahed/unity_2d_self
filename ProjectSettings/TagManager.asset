@@ -9,6 +9,7 @@ TagManager:
   - ObstacleSpike
   - Ground
   - Obstacle
+  - Finisher
   layers:
   - Default
   - TransparentFX

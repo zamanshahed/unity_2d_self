@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Move.cs" />
+    <Compile Include="Assets\Script\PauseGame.cs" />
     <Compile Include="Assets\Script\Score.cs" />
     <Compile Include="Assets\Script\Wheel.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
