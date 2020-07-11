@@ -7,7 +7,11 @@ public class Wheel : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    public GameManager gameManager;
+    public Score score;
+
     public Animator wheelAnim;
+    public GameObject coin;
     public float speed;
 
     // Start is called before the first frame update
@@ -33,4 +37,35 @@ public class Wheel : MonoBehaviour
         //Jump
         rb.velocity = new Vector2(rb.velocity.x, speed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Debug.Log("Coin Scored !!");
+            score.Scored();
+            Destroy(collision.gameObject);
+        }
+    }
+        
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            //Debug.Log("Obstacle Collsion ... !!");
+            if (GameManager.gameOver == false)
+            {
+                //game over
+                gameManager.GameOver();
+                //Debug.Log("Obstacle Collsion ... !!");
+            }
+            else
+            {
+                //something..
+            }
+        }
+    }
+
+
+
 }

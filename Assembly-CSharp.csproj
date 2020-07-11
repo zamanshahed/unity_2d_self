@@ -62,15 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Move.cs" />
+    <Compile Include="Assets\Script\Score.cs" />
     <Compile Include="Assets\Script\Wheel.cs" />
-    <Compile Include="Assets\Script\cheat\Bird.cs" />
-    <Compile Include="Assets\Script\cheat\GameManager.cs" />
-    <Compile Include="Assets\Script\cheat\MenuScripts\MenuManager.cs" />
-    <Compile Include="Assets\Script\cheat\MoveLeft.cs" />
-    <Compile Include="Assets\Script\cheat\ObstacleSpawner.cs" />
-    <Compile Include="Assets\Script\cheat\Pause.cs" />
-    <Compile Include="Assets\Script\cheat\Score.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
